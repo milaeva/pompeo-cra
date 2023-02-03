@@ -1,0 +1,46 @@
+.shoppingBg {
+  width: 100vw;
+  background-image: linear-gradient(90deg, #f8f6f4, transparent),
+    url('../../assets/start-shopping-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.shoppingMain {
+  padding-top: 12.2rem;
+  padding-bottom: 12.2rem;
+}
+
+.shoppingMain h2 {
+  font-size: 3.6rem;
+  color: var(--secondary-text-color);
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.shoppingMain p {
+  font-size: 1.7rem;
+  width: 41%;
+  font-weight: 500;
+  margin: 1.5rem 0;
+}
+.shoppingMain p span {
+  text-decoration: underline;
+  color: #ac1313;
+}
+
+/* media queries */
+
+/**************************/
+/* BELOW 769px */
+/**************************/
+
+@media (max-width: 48em) {
+  .shoppingMain p {
+    width: 60%;
+    font-size: 1.8rem;
+  }
+}

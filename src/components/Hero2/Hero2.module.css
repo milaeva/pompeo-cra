@@ -1,0 +1,23 @@
+.heroContent h1 {
+  color: var(--secondary-text-color);
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.heroContent p {
+  width: 50%;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+/* media queries */
+/**************************/
+/* BELOW 944px */
+/**************************/
+
+@media (max-width: 59em) {
+  .heroContent p {
+    width: 80%;
+  }
+}

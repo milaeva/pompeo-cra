@@ -1,0 +1,35 @@
+.text {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+}
+
+.pCollection {
+  margin-top: 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* media queries */
+
+/**************************/
+/* BELOW 769px */
+/**************************/
+
+@media (max-width: 48em) {
+  .pCollection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/**************************/
+/* BELOW 544px */
+/**************************/
+
+@media (max-width: 34em) {
+  .pCollection {
+    grid-template-columns: 1fr;
+  }
+}

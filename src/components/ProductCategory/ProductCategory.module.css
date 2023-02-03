@@ -1,0 +1,169 @@
+.productCategory {
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+
+  margin-top: 3rem;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10rem;
+
+  padding-bottom: 15%;
+  margin-top: 15rem;
+}
+
+.vase:link,
+.vase:visited,
+.mug:link,
+.mug:visited,
+.plate:link,
+.plate:visited {
+  position: relative;
+  text-decoration: none;
+  justify-self: center;
+}
+
+.plate img {
+  width: 64px;
+  height: 64px;
+}
+
+.vase::before,
+.vase::after,
+.mug::before,
+.mug::after,
+.plate::before,
+.plate::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vase::before,
+.mug::before,
+.plate::before {
+  width: 400%;
+  padding-bottom: 400%;
+  z-index: -2;
+}
+
+.vase::after,
+.mug::after,
+.plate::after {
+  width: 300%;
+  padding-bottom: 300%;
+  z-index: -1;
+}
+
+.vase::before {
+  background: #d8aa61;
+}
+
+.mug::before {
+  background: #e4560f;
+}
+
+.plate::before {
+  background: #9a0f0f;
+}
+
+.vase::after {
+  background: #e4b366;
+}
+
+.mug::after {
+  background: #f05b10;
+}
+
+.plate::after {
+  background: #a21010;
+}
+
+.text {
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15rem;
+
+  margin-top: 5rem;
+}
+
+.infoHeading {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.infoText {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/**************************/
+/* BELOW 769px */
+/**************************/
+
+@media (max-width: 48em) {
+  .figures {
+    grid-template-columns: 1fr;
+    gap: 30rem;
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+  }
+  .vase::before,
+  .mug::before,
+  .plate::before {
+    width: 400%;
+    padding-bottom: 400%;
+  }
+
+  .vase::after,
+  .mug::after,
+  .plate::after {
+    width: 300%;
+    padding-bottom: 300%;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .infoText {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .infoText {
+    width: 100%;
+  }
+}

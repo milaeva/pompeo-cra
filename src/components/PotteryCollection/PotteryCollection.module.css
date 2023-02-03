@@ -1,0 +1,47 @@
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  margin-top: 2rem;
+}
+
+.pCollection {
+  margin-top: 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.collectionBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+/* media queries */
+
+/**************************/
+/* BELOW 769px */
+/**************************/
+
+@media (max-width: 48em) {
+  .pCollection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/**************************/
+/* BELOW 544px */
+/**************************/
+
+@media (max-width: 34em) {
+  .pCollection {
+    grid-template-columns: 1fr;
+  }
+}

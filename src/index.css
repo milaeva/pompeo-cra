@@ -1,0 +1,115 @@
+/* 
+font-family: Poppins(html)
+Libre franklin (p tags)
+
+text-color: #6c6c6c (p tags)
+#000 (subheading)
+            
+
+
+
+
+*/
+
+:root {
+  --primary-text-color: #6c6c6c;
+  --secondary-text-color: #000;
+  --tertiary-text-color: #d77474;
+  --btn-color: #ac1313;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  /*  10px / 16px  */
+  font-size: 62.5%;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  color: #6c6c6c;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.6;
+}
+
+.scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* General reusable components */
+
+.container {
+  max-width: 125rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.unique-font {
+  font-family: 'Playfair Display', sans-serif;
+  color: #ac1313;
+  font-size: 6.8rem;
+  font-weight: 400;
+}
+
+.p-TopBottom {
+  padding: 9.6rem 0;
+}
+
+.borderTop {
+  border-top: 1px solid #ebebeb;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #ebebeb;
+}
+
+/**************************/
+/* BELOW 1136px */
+/**************************/
+
+@media (max-width: 71em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 944px */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 769px */
+/**************************/
+
+@media (max-width: 48em) {
+}
+
+/**************************/
+/* BELOW 544px */
+/**************************/
+
+@media (max-width: 34em) {
+  .unique-font {
+    font-size: 4.8rem;
+  }
+}

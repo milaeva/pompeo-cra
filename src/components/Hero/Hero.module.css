@@ -1,0 +1,98 @@
+.hero {
+  background-image: url('../../assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: 0px 0px;
+  padding-top: 9.1rem;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+
+  height: 100vh;
+  align-content: center;
+}
+
+.heroTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.mainHeroText {
+  color: #000;
+  font-size: 4.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.subHeroText {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.heroImg {
+  position: relative;
+}
+
+.heroImg img {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1.4);
+  position: absolute;
+}
+
+/* media queries  */
+
+/**************************/
+/* BELOW 944px */
+/**************************/
+
+@media screen and (orientation: landscape) and (max-width: 59em) {
+  .hero {
+    padding-top: 20rem;
+    height: 100rem;
+  }
+
+  .heroTexts {
+    padding-top: 15rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .heroTexts {
+    width: 100%;
+    align-items: center;
+  }
+
+  .heroImg {
+    text-align: center;
+  }
+
+  .heroImg img {
+    max-width: 100%;
+    position: static;
+    transform: scale(1);
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .heroTexts {
+    gap: 2rem;
+  }
+  .mainHeroText {
+    font-size: 4rem;
+  }
+}

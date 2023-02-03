@@ -1,0 +1,18 @@
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 2rem 4rem;
+  background-color: var(--btn-color);
+  transition: all 400ms ease;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: var(--secondary-text-color);
+  transform: translateY(-6px);
+}

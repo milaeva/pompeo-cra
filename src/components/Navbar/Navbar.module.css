@@ -1,0 +1,157 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 9.1rem;
+}
+
+.brandLogo {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+  font-family: 'Pacifico', cursive;
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navList {
+  display: flex;
+}
+
+.navList li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 2rem;
+}
+
+.navItem:link,
+.navItem:visited {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 1.45rem;
+  transition: all 0.3s;
+}
+
+.navItem:hover,
+.navItem:active {
+  color: var(--secondary-text-color);
+}
+
+.canu {
+  display: flex;
+  align-items: center;
+}
+
+.cart {
+  border-left: 1px solid #ebebeb;
+  margin-left: 1rem;
+  padding: 1rem;
+  opacity: 0.8;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cartIcon {
+  font-size: 2.8rem;
+}
+
+.cartText {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.cart:hover {
+  opacity: 1;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileNav {
+  position: fixed;
+  top: 9rem;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  transition: all 0.3s ease-in;
+}
+
+/***************************/
+/* media queries */
+/***************************/
+
+/**************************/
+/* BELOW 769px */
+/**************************/
+
+@media (max-width: 48em) {
+  .nav {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: flex;
+    align-content: center;
+    margin-left: 3rem;
+    /* display: none; */
+  }
+
+  .openMenu,
+  .closeMenu {
+    font-size: 3rem;
+  }
+
+  .mobileNavItem:link,
+  .mobileNavItem:visited {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.45rem;
+    font-weight: 500;
+    padding: 4rem 3.5rem 4rem;
+    border-top: 1px solid #ebebeb;
+  }
+
+  .mobileNavItem:hover,
+  .mobileNavItem:active {
+    color: var(--secondary-text-color);
+  }
+
+  .mobileNav.openNav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}

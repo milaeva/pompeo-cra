@@ -1,0 +1,19 @@
+.about {
+  background-image: linear-gradient(90deg, #f8f6f4 20%, transparent),
+    url('../../assets/about-hero-bg.jpg');
+
+  padding: 18rem 0rem 13rem;
+}
+
+/* media queries */
+/**************************/
+/* BELOW 944px */
+/**************************/
+
+@media (max-width: 59em) {
+  .about {
+    background-image: linear-gradient(90deg, #f8f6f4 34%, transparent),
+      url('../../assets/shop-hero-bg.jpg');
+    background-size: cover;
+  }
+}

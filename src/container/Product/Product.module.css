@@ -1,0 +1,142 @@
+.product {
+  background-image: linear-gradient(90deg, #f8f6f4 20%, transparent),
+    url('../../assets/shop-hero-bg.jpg');
+  padding: 18rem 0rem 13rem;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.itemImg {
+  justify-self: center;
+}
+
+.itemImg img {
+  height: 68rem;
+}
+
+.itemDetails {
+  align-self: center;
+}
+
+.itemDetails h2 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  margin-top: 1.5rem;
+}
+
+.productPrice {
+  color: var(--secondary-text-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.itemDetails p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.45rem;
+}
+
+.productP {
+  margin-bottom: 2.5rem;
+  color: var(--secondary-text-color);
+  font-size: 1.56rem;
+  text-transform: capitalize;
+}
+
+.productP span {
+  color: var(--primary-text-color);
+  margin-left: 0.5rem;
+}
+
+.productP:nth-child(6n),
+.productP:nth-child(5n) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ebebeb;
+}
+
+span.socialIcon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  padding: 0.6rem;
+  border: 1px solid #ebebeb;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  margin-left: 1rem;
+}
+
+.icon {
+  font-size: 1.7rem;
+}
+
+.socialIcon:hover {
+  border-color: #ebb96a;
+}
+
+.socialIcon:hover .icon {
+  color: var(--secondary-text-color);
+}
+
+.productP input {
+  margin-top: 1rem;
+  display: block;
+  width: 7rem;
+  height: 3.5rem;
+  padding: 1rem;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+  background-color: #f8f6f4;
+}
+
+.productP input:focus {
+  outline-style: none;
+  border-color: #3898ec;
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  display: inline-block;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(--btn-color);
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.btn:hover {
+  background-color: var(--secondary-text-color);
+  transform: translateY(-6px);
+}
+
+/* media queries */
+
+/**************************/
+/* BELOW 769px */
+/**************************/
+
+@media (max-width: 48em) {
+  .item {
+    grid-template-columns: 1fr;
+  }
+
+  .itemImg {
+    width: 100%;
+  }
+
+  .itemImg img {
+    width: 100%;
+    height: auto;
+  }
+}
