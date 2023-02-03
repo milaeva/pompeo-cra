@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/pompeo-cra/static/css/main.5d2adc1d.css",
+    "main.js": "/pompeo-cra/static/js/main.9cbf6d1b.js",
+    "static/media/featured-vase1.png": "/pompeo-cra/static/media/featured-vase1.e515d103cafcc48c2233.png",
+    "static/media/start-shopping-bg.jpeg": "/pompeo-cra/static/media/start-shopping-bg.06ec26bd2bb38ed37e2c.jpeg",
+    "static/media/shop-hero-bg.jpg": "/pompeo-cra/static/media/shop-hero-bg.3794b5270601afe45ea7.jpg",
+    "static/media/contact-headerBg.jpeg": "/pompeo-cra/static/media/contact-headerBg.932171620a6d9d102a07.jpeg",
+    "static/media/hero-bg.jpg": "/pompeo-cra/static/media/hero-bg.72051d3cd7f340ba7da5.jpg",
+    "static/media/hero-img.png": "/pompeo-cra/static/media/hero-img.b25922b3dcb67c2e5aeb.png",
+    "static/media/Maria-Monroy.jpeg": "/pompeo-cra/static/media/Maria-Monroy.c13fcf070ae9dc3b384f.jpeg",
+    "static/media/featured-vase2.png": "/pompeo-cra/static/media/featured-vase2.37e134d24a273ff1e4aa.png",
+    "static/media/about-hero-bg.jpg": "/pompeo-cra/static/media/about-hero-bg.1beee574d08ab2b57c58.jpg",
+    "static/media/dominic-basket.jpg": "/pompeo-cra/static/media/dominic-basket.8298942ca6107b5dc273.jpg",
+    "static/media/eduard-fisher.jpg": "/pompeo-cra/static/media/eduard-fisher.b8afe7a37382755ebdc1.jpg",
+    "static/media/contact-hero-bg.jpg": "/pompeo-cra/static/media/contact-hero-bg.de19ffe1446c5ba318e0.jpg",
+    "static/media/plate.png": "/pompeo-cra/static/media/plate.0d09e754375b998b0684.png",
+    "index.html": "/pompeo-cra/index.html",
+    "main.5d2adc1d.css.map": "/pompeo-cra/static/css/main.5d2adc1d.css.map",
+    "main.9cbf6d1b.js.map": "/pompeo-cra/static/js/main.9cbf6d1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d2adc1d.css",
+    "static/js/main.9cbf6d1b.js"
+  ]
+}
